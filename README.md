@@ -172,8 +172,10 @@ On an emulator, set a location in Extended controls, save the office on that poi
 
 ## Screenshots
 
-| Outside the zone | Inside the zone | Permission / GPS handling |
-|---|---|---|
-| ![Outside](docs/screenshots/outside.png) | ![Inside](docs/screenshots/inside.png) | ![Permissions](docs/screenshots/permission.png) |
+| Outside the zone | Inside the zone |
+|---|---|
+| ![Outside the zone](docs/screenshots/outside.jpg) | ![Inside the zone](docs/screenshots/inside.jpg) |
 
-Add device screenshots or GIFs under `docs/screenshots/`.
+| Location permission | Set office on the map |
+|---|---|
+| ![Location permission](docs/screenshots/permission.jpg) | ![Set office on the map](docs/screenshots/set-office.jpg) |
