@@ -126,29 +126,13 @@ The UI does not keep its own copy. `attendanceRecords` is a `Flow`. The ViewMode
 - `AttendanceRecordCodecTest`: round-trip and corrupt lines.
 - `AttendanceViewModelTest`: map point save, check-in hours stay check-in, check-out hours record check-out, button locked outside 50 m and outside the hours, weak GPS inside the zone, schedule update, permission state.
 
-## Generative AI Usage
-
-An AI coding assistant (Cursor) was used as a pair programmer. The architecture, the 50 m rule, and the hour rule were reviewed and adjusted by hand. AI was not left to invent the acceptance rules.
-
-1. The assessment PDF was turned into acceptance criteria: set office, 50 m gate, live distance, permission and GPS-off handling.
-2. The domain / data / ui split and the MVI contract were drafted, then changed to manual DI and DataStore instead of Hilt and Room.
-3. Compose layout, string resources, and unit tests were drafted and then corrected when the behaviour was wrong (fixed ring, check-in flipping into check-out, 24-hour picker).
-
-Essential prompts:
-
-- *"This project is for a native geo attendance Android app. Check this attachment and create an app following the instructions."*
-- *"Model the attendance screen as MVI: one StateFlow, intents in, one-shot events out. GPS runs only while the screen is visible."*
-- *"The progress ring has one max of 300 m. Under 50 m it is green, over 50 m it is red."*
-- *"If the button enables during check-in hours, the mark is only a check-in. Same for check-out. Do not flip on the next tap."*
-- *"Write the README as interview documentation: map integration, progress-bar math, how the current time is taken, how mark attendance decides the type, and how activity is saved."*
-
 ## How to Run
 
 **Requirements:** Android Studio (latest stable), JDK 17+, Android SDK 37, and a device or emulator with Google Play services.
 
 1. Clone the repo and open it in Android Studio.
    ```bash
-   git clone https://github.com/<your-username>/GeoCheck.git
+   git clone https://github.com/Monjur-Alam/GeoCheck.git
    cd GeoCheck
    ```
 2. Put a Maps SDK for Android key in `local.properties` (this file is not committed):
