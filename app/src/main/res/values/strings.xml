@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">GeoCheck</string>
+    <string name="app_tagline">Geo-fenced attendance</string>
+
+    <string name="step_office_context">Step 1: Office context</string>
+    <string name="office_help">To mark your attendance, ensure your current office location is correctly identified.</string>
+    <string name="map_not_set">Move the map to choose your office</string>
+    <string name="distance_away_label">Away</string>
+    <string name="distance_placeholder">—</string>
+    <string name="status_out_of_range">Out of range</string>
+    <string name="status_in_range">In range</string>
+    <string name="status_locating">Locating</string>
+    <string name="hint_move_closer">Move within %1$d meters of the designated office location to enable check-in.</string>
+    <string name="hint_ready">You are within %1$d meters. You can mark attendance.</string>
+    <string name="hint_set_office_first">Set your office location on the map to enable check-in.</string>
+    <string name="hint_locating">Waiting for a GPS fix to measure your distance.</string>
+    <string name="hint_low_accuracy">GPS accuracy is too low to confirm you are inside the zone.</string>
+    <string name="hint_mock">A mock location was detected. Attendance is blocked.</string>
+    <string name="hint_outside_hours">%1$s is available from %2$s to %3$s.</string>
+    <string name="available_window">Available %1$s – %2$s</string>
+    <string name="applicable_window">%1$s · Available %2$s – %3$s</string>
+    <string name="edit_hours">Set check-in &amp; check-out hours</string>
+    <string name="lock_content_description">Attendance locked</string>
+    <string name="schedule_title">Attendance hours</string>
+    <string name="schedule_check_in">Check-in</string>
+    <string name="schedule_check_out">Check-out</string>
+    <string name="schedule_to">to</string>
+    <string name="schedule_invalid">End time must be after the start time.</string>
+    <string name="action_save">Save</string>
+    <string name="action_ok">OK</string>
+    <string name="picker_hint">Drag the map. The pin is your office, and the circle is the %1$d m zone.</string>
+    <string name="picker_save">Save office location</string>
+    <string name="current_location">Current location</string>
+    <string name="msg_current_location_unavailable">Current location isn’t available yet. Wait for a GPS fix, then try again.</string>
+
+    <!-- Map -->
+    <string name="map_zone_label">%1$d m zone</string>
+    <string name="map_office_marker">Office</string>
+    <string name="map_office_marker_snippet">Attendance zone centre</string>
+    <string name="map_no_office_hint">Set your office location to create a %1$d m attendance zone</string>
+    <string name="map_recenter">Recenter map</string>
+
+    <!-- Distance indicator -->
+    <string name="distance_away">You are %1$s away from the office</string>
+    <string name="distance_inside">You are inside the office zone</string>
+    <string name="distance_inside_detail">%1$s from the office centre</string>
+    <string name="distance_no_office">No office location set yet</string>
+    <string name="distance_no_office_detail">Stand at your office and tap “Set Office Location”.</string>
+    <string name="distance_waiting">Finding your location…</string>
+    <string name="distance_waiting_detail">Getting a high-accuracy GPS fix.</string>
+    <string name="distance_unavailable">Live location unavailable</string>
+    <string name="distance_unavailable_detail">Allow location access and turn on GPS to see your distance.</string>
+    <string name="distance_outside_detail">Move %1$s closer to mark attendance.</string>
+    <string name="distance_low_accuracy_detail">Weak GPS signal (±%1$s). Move near a window or outdoors.</string>
+    <string name="distance_mock_detail">Mock location detected. Attendance is blocked.</string>
+    <string name="gps_accuracy">GPS accuracy ±%1$s</string>
+    <string name="status_inside">Inside zone</string>
+    <string name="status_outside">Outside zone</string>
+    <string name="status_low_accuracy">Low accuracy</string>
+    <string name="status_mock">Mock location</string>
+    <string name="unit_meters">%1$d m</string>
+    <string name="unit_kilometers">%1$.1f km</string>
+
+    <!-- Office -->
+    <string name="office_title">Office location</string>
+    <string name="office_not_set">Not set</string>
+    <string name="office_saved_on">Saved %1$s · ±%2$s</string>
+    <string name="office_set">Set Office Location</string>
+    <string name="office_update">Update Office Location</string>
+    <string name="office_update_confirm_title">Update office location?</string>
+    <string name="office_update_confirm_body">Your current GPS position will replace the saved office location. The %1$d m attendance zone will move with it.</string>
+    <string name="action_update">Update</string>
+    <string name="action_cancel">Cancel</string>
+
+    <!-- Attendance -->
+    <string name="mark_attendance">Mark Attendance</string>
+    <string name="mark_attendance_check_in">Mark Attendance · Check in</string>
+    <string name="mark_attendance_check_out">Mark Attendance · Check out</string>
+    <string name="mark_hint_inside">You’re within %1$d m of the office.</string>
+    <string name="mark_hint_disabled">Available only within %1$d m of the office.</string>
+    <string name="today_title">Today’s activity</string>
+    <string name="today_empty">No attendance marked today.</string>
+    <string name="check_in">Check in</string>
+    <string name="check_out">Check out</string>
+    <string name="record_detail">%1$s from office</string>
+
+    <!-- Banners -->
+    <string name="banner_permission_title">Location permission needed</string>
+    <string name="banner_permission_body">GeoCheck uses precise location to verify you are at the office.</string>
+    <string name="banner_permission_approx_title">Precise location is off</string>
+    <string name="banner_permission_approx_body">Approximate location is not accurate enough for a %1$d m zone. Please allow precise location.</string>
+    <string name="banner_permission_blocked_body">Permission was denied permanently. Enable location for GeoCheck in system settings.</string>
+    <string name="banner_gps_off_title">Location services are off</string>
+    <string name="banner_gps_off_body">Turn on device location to track your distance from the office.</string>
+    <string name="banner_tracking_failed_title">Couldn’t start location updates</string>
+    <string name="banner_tracking_failed_body">Google Play services may be unavailable or out of date.</string>
+    <string name="action_allow">Allow</string>
+    <string name="action_open_settings">Open settings</string>
+    <string name="action_turn_on">Turn on</string>
+    <string name="action_retry">Retry</string>
+
+    <!-- Messages -->
+    <string name="msg_office_saved">Office location saved.</string>
+    <string name="msg_schedule_saved">Attendance hours saved.</string>
+    <string name="msg_invalid_window">Each range needs an end time after its start time.</string>
+    <string name="msg_outside_check_in">Check-in is only available from %1$s to %2$s.</string>
+    <string name="msg_outside_check_out">Check-out is only available from %1$s to %2$s.</string>
+    <string name="msg_office_fix_unavailable">Couldn’t get a GPS fix. Move near a window and try again.</string>
+    <string name="msg_office_fix_inaccurate">GPS accuracy is ±%1$s. Need ±%2$s or better to save the office.</string>
+    <string name="msg_mock_blocked">Mock locations are not allowed.</string>
+    <string name="msg_checked_in">Checked in at %1$s · %2$s from office</string>
+    <string name="msg_checked_out">Checked out at %1$s · %2$s from office</string>
+    <string name="msg_outside_zone">You are %1$s away. Move within %2$d m of the office.</string>
+    <string name="msg_low_accuracy">GPS accuracy is ±%1$s. Wait for a stronger signal.</string>
+    <string name="msg_no_office">Set the office location first.</string>
+    <string name="msg_waiting_gps">Still waiting for a GPS fix.</string>
+    <string name="msg_failure">Something went wrong. Please try again.</string>
+    <string name="msg_location_settings_unavailable">Couldn’t open location settings.</string>
+</resources>
