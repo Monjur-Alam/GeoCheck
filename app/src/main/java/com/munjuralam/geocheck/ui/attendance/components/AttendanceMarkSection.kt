@@ -44,6 +44,7 @@ import com.munjuralam.geocheck.domain.geofence.GeofenceStatus
 import com.munjuralam.geocheck.domain.geofence.isWithinOffice
 import com.munjuralam.geocheck.domain.model.AttendanceType
 import com.munjuralam.geocheck.ui.attendance.AttendanceUiState
+import com.munjuralam.geocheck.ui.attendance.formatDistance
 import com.munjuralam.geocheck.ui.attendance.formatMinutesOfDay
 import com.munjuralam.geocheck.ui.attendance.formatRingDistance
 import kotlin.math.roundToInt
@@ -104,6 +105,17 @@ fun AttendanceMarkSection(
             trackColor = ringTrackColor,
             sweep = sweep,
         )
+
+        val accuracy = state.currentLocation?.accuracyMeters?.takeIf { measured != null && it != Float.MAX_VALUE }
+        if (accuracy != null) {
+            Spacer(Modifier.height(8.dp))
+            Text(
+                text = stringResource(R.string.gps_accuracy, context.formatDistance(accuracy)),
+                color = Muted,
+                fontSize = 12.sp,
+                fontWeight = FontWeight.Medium,
+            )
+        }
 
         Spacer(Modifier.height(14.dp))
         ApplicableWindowText(windowLabel)

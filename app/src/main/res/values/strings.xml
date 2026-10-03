@@ -6,8 +6,7 @@
     <string name="office_help">To mark your attendance, ensure your current office location is correctly identified.</string>
     <string name="map_not_set">Move the map to choose your office</string>
     <string name="distance_away_label">Away</string>
-    <string name="distance_placeholder">—</string>
-    <string name="status_out_of_range">Out of range</string>
+    <string name="distance_placeholder">—</string>    <string name="status_out_of_range">Out of range</string>
     <string name="status_in_range">In range</string>
     <string name="status_locating">Locating</string>
     <string name="hint_move_closer">Move within %1$d meters of the designated office location to enable check-in.</string>
