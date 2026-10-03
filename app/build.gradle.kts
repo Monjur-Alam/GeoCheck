@@ -50,7 +50,6 @@ android {
         release {
             optimization {
                 enable = true
-                packageScope = setOf("androidx.**", "kotlin.**", "kotlinx.**")
             }
             signingConfig = signingConfigs.findByName("release") ?: signingConfigs.getByName("debug")
         }
